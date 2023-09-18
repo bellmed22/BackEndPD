@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap");
+
+
+/* BASICO
+================================ */
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + vw);
+}
+
+body {
+  font-size: 1.5em;
+  background-color: #328c9c;
+  color: #fff;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  padding: 3em 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Tipografías
+  ---------------------------------*/
+  h1 {
+    padding: 3% 0 2% 0;
+    font-family: 'Poppins', serif;
+    font-weight: 900;
+    letter-spacing: .2rem;
+  }
+
+  h1 span {
+    padding-bottom: 3%;
+    font-size: 15rem;
+    font-family: 'Poppins', serif;
+    font-weight: 900;
+    line-height: 70%;;
+    letter-spacing: .4rem;
+  }
+  
+
+h2 {
+  padding: 3% 0;
+  font-size: 3.5rem;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  letter-spacing: .4rem;
+}
+
+h3 {
+  padding-bottom: 2%;
+  font: 2.5rem 'Lato', serif;
+}
+
+h4 {
+  font: 2rem 'Lato', serif;
+  line-height: 0.3rem;
+}
+
+h5 {
+  font-family: 'Lato', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: end;
+  letter-spacing: .2rem;
+  line-height: 5.3rem;
+  margin-bottom: 10%;
+  margin: 15% 5% 0 0%;
+}
+
+h5 span {
+  font-size: 5rem;
+  font-weight:700;
+  color: #328c9c;
+}
+
+
+
+/* ESTRUCTURA
+================================ */
+
+/* Header
+  ---------------------------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 85vh;
+  background-color: #57448b;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
+
+.section-white {
+  background: linear-gradient(#ffffff, #f3f3f3);
+  color: #0e0d0e;
+}
+
+.section-gradient {
+  background: #c33764;
+  background: linear-gradient(to top, #42275a, #734b6d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+  transform: scale(1.2);
+  transition: opacity .4s .6s, transform .4s .6s;
+  z-index: 0;
+}
+
+.content blockquote {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  z-index: 2;
+  max-width: 40%;
+}
+
+
+blockquote p {
+  font-size: 8rem;
+  margin-bottom: .2rem;
+  word-break: normal;
+}
+
+blockquote span {
+  font-size: 2.2rem;
+}
+
+
+
+
+
+
+/* ABOUT ME
+================================ */
+
+
+.quote {
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: #a88bca;
+  padding-top: 3%;
+  line-height: 120%;
+}
+
+
+
+
+/* Skills
+  ---------------------------------*/
+
+
+.skill__inner-bar--html {
+  width: 90%;
+  background: #be467e;
+}
+
+.skill__inner-bar--css {
+  width: 80%;
+  background: #4ab4f1;
+}
+
+.skill__inner-bar--js {
+  width: 50%;
+  background: #f1d073;
+}
+
+.skill__inner-bar--bs {
+  width: 75%;
+  background: #4c3c79;
+}
+
+.skill__inner-bar--git {
+  width: 50%;
+  background: #aa513b;
+}
+
+.skill__inner-bar--ghub {
+  width: 70%;
+  background: #328c9c;
+}
+
+.skill__inner-bar--en {
+  width: 80%;
+  background: #5c5c5c;
+}
+
+
+
+
+/* Filtros
+  ---------------------------------*/
+
+
+#portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.filter-active {
+  color: #fff;
+  background: #7754a0;
+}
+
+
+
+
+
+/* CONTACTO
+================================ */
+
+.contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #c33764;
+}
+
+.contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+.contact-info a {
+  color: #f3a200;
+}
+
+.contact-info a:hover {
+  color: #c33764;
+  text-decoration: none;
+}
+
+
+
