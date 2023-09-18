@@ -27,25 +27,25 @@
     echo "<br>";
 
     //RESTA
-    echo "<h3>RESTA</h3>";
+    echo "<h4>RESTA</h4>";
     echo "$numero1 - $numero2 = ";
     echo $numero1 - $numero2;    
     echo "<br>";
 
     //MULTIPLICACIÓN
-    echo "<h3>MULTIPLICACIÓN</h3>";
+    echo "<h4>MULTIPLICACIÓN</h4>";
     echo "$numero1 * $numero1 = ";
     echo $numero1 * $numero1;    
     echo "<br>";
 
     //DIVISIÓN
-    echo "<h3>DIVISIÓN</h3>";
+    echo "<h4>DIVISIÓN</h4>";
     echo "$numero1 / $numero2 = ";
     echo (float) ($numero1 / $numero2);
     echo "<br>";
 
     //RESTO
-    echo "<h3>RESTO</h3>";
+    echo "<h4>RESTO</h4>";
     echo "$numero2 % $numero1 = ";
     echo $numero2 % $numero1;
     echo "<br>";
@@ -69,7 +69,7 @@
 
     //ÁREAS Y PERÍMETROS
     echo "<h2>Aréas y perímetros</h2>
-    <h3>RECTÁNGULO</h3>";
+    <h4>RECTÁNGULO</h4>";
 
     //Variables Rectángulo
     $base = 18; 
@@ -83,7 +83,7 @@
 
     echo "<em>El área del rectángulo es $areaR cm, y su perímetro es $perimetroR cm.</em>";
       
-    echo "<h3>CÍRCULO</h3>";
+    echo "<h4>CÍRCULO</h4>";
     
     //Variables Círculo
     $radio = 30; 
