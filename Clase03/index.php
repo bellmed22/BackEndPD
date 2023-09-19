@@ -88,8 +88,8 @@
     //Variables Círculo
     $radio = 30; 
     $radio_pow = pow($radio, 2);
-    $areaC = M_PI() * $radio_pow;
-    $perimetroC = 2 * $radio * M_PI(); 
+    $areaC = pi() * $radio_pow;
+    $perimetroC = 2 * $radio * pi(); 
 
     echo "Radio: 30cm<br>";
     echo "<br>";
