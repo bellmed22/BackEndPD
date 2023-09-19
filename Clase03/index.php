@@ -87,11 +87,12 @@
     
     //Variables Círculo
     $radio = 30; 
-    $areaC = 3.14 * $radio * $radio;   
-    $perimetroC = 2 * $radio * 3.14; 
+    $radio_pow = pow($radio, 2);
+    $areaC = M_PI() * $radio_pow;
+    $perimetroC = 2 * $radio * M_PI(); 
 
     echo "Radio: 30cm<br>";
     echo "<br>";
-
-     echo "<em>El área del círculo es $areaC cm, y su perímetro es $perimetroC cm.</em>";    
+    
+    echo "<em>El área del círculo es $areaC cm, y su perímetro es $perimetroC cm.</em>";    
 ?>
