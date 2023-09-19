@@ -68,7 +68,7 @@
 
 
     //ÁREAS Y PERÍMETROS
-    echo "<h2>Aréas y perímetros</h2>
+    echo "<h2>Áreas y perímetros</h2>
     <h4>RECTÁNGULO</h4>";
 
     //Variables Rectángulo
