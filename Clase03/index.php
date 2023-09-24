@@ -1,5 +1,5 @@
 <?php 
-    echo '<link rel="stylesheet" type="text/css" href="style.css"></head>';
+    echo '<link rel="stylesheet" type="text/css" href="style.css">';
     //HOLA MUNDO!
     echo "<h1>Hola Mundo!</h1>";
     echo "Va de nuevo...";
