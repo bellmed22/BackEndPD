@@ -80,5 +80,4 @@ while($numero <= 20){
     $numero += 2;  
 }  
     echo "La suma de los números del 1 al 20 es $suma";
-
 ?>
