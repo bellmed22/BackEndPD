@@ -64,7 +64,7 @@ while($numero <= 20){
     $suma += $numero;
     $numero++;  
 }  
-    echo "La suma de los números del 1 al 20 es $suma.\n";
+    echo "La suma de los números del 1 al 20 es $suma";
 
 
 // 6) Mostrar la suma de los números pares del 1 al 20echo "<h3>uma de los números del <span>1 al 20</span></h3>";
@@ -79,6 +79,6 @@ while($numero <= 20){
     $suma += $numero;
     $numero += 2;  
 }  
-    echo "La suma de los números del 1 al 20 es $suma.\n";
+    echo "La suma de los números del 1 al 20 es $suma";
 
 ?>
