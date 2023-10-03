@@ -34,9 +34,6 @@ while($numero == 0){
     }
 
 while($numero <= 20){  
-     if ($number ==10) {
-        continue;
-    }  
         echo "Esta es la iteración número: " . $numero;
         echo "<br>";
         $numero += 2;
