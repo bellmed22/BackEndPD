@@ -50,5 +50,35 @@ while($numero <= 20){
     echo "Esta es la iteración número: " . $numero;
     echo "<br>";
     $numero += 2;
-}       
+}  
+
+// 5) Mostrar la suma de los números del 1 al 20
+echo "<h3>Suma de los números del <span>1 al 20</span></h3>";
+$suma = 0;
+
+while($numero == 21){
+    $numero -= 20;
+}
+
+while($numero <= 20){
+    $suma += $numero;
+    $numero++;  
+}  
+    echo "La suma de los números del 1 al 20 es $suma.\n";
+
+
+// 6) Mostrar la suma de los números pares del 1 al 20echo "<h3>uma de los números del <span>1 al 20</span></h3>";
+echo "<h3>Suma de los <span>números pares</span>del <span>1 al 20</span></h3>";
+
+
+while($numero == 21){
+    $numero -= 21;
+}
+
+while($numero <= 20){
+    $suma += $numero;
+    $numero += 2;  
+}  
+    echo "La suma de los números del 1 al 20 es $suma.\n";
+
 ?>
