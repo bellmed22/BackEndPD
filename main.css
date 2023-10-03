@@ -37,9 +37,13 @@ body {
 }
 
 .front {
-  margin-top: -10%;
-  height: 15vh;
-  transform: scaleY(-1);
+  position: absolute;
+  top: 5vh;
+  height: 25vh;
+  /*transform: scaleY(-1);*/
+  border-bottom: #7289da; 
+  border-width: 0 0 15px 0px;
+  border-style: ridge;
 }
 
 h1 {
