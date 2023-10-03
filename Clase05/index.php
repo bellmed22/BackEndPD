@@ -16,9 +16,11 @@ while($numero <= 9){
 // 2) Mostrar los números del 9 al 1
 echo "<h3>Números del <span>9 al 1</span></h3>";
 
-$numero = 9;
+while($numero == 10){
+    $numero --;
+}
 
-while($numero >= 1){
+while($numero >= 1){   
         echo "Esta es la iteración número: " . $numero;
         echo "<br>";
         $numero -= 1;
@@ -27,9 +29,14 @@ while($numero >= 1){
 // 3) Mostrar los números pares del 1 al 20
 echo "<h3>Números <span>pares</span> del <span>1 al 20</span></h3>";
 
-$numero = 2;
+while($numero == 0){
+        $numero += 2;
+    }
 
-while($numero <= 20){
+while($numero <= 20){  
+     if ($number ==10) {
+        continue;
+    }  
         echo "Esta es la iteración número: " . $numero;
         echo "<br>";
         $numero += 2;
@@ -38,11 +45,13 @@ while($numero <= 20){
 // 4) Mostrar los números impares del 1 al 20
 echo "<h3>Números <span>impares</span> del <span>1 al 20</span></h3>";
 
-$numero = 1;
+while($numero == 22){
+    $numero -= 21;
+}
 
-while($numero <= 20){
-        echo "Esta es la iteración número: " . $numero;
-        echo "<br>";
-        $numero += 2;
-    } 
-    
+while($numero <= 20){    
+    echo "Esta es la iteración número: " . $numero;
+    echo "<br>";
+    $numero += 2;
+}       
+?>
