@@ -49,7 +49,7 @@ echo "La suma de los números del 1 al 20 es $suma \n";
 
 
 // 6) Mostrar la suma de los números pares del 1 al 20echo "<h3>uma de los números del <span>1 al 20</span></h3>";
-echo "<h3>Suma de los <span>números pares</span>del <span>1 al 20</span></h3>";
+echo "<h3>Suma de los <span>números pares</span> del <span>1 al 20</span></h3>";
 
 $suma = 0;
 for ($i = 2; $i <= 20; $i += 2) {
