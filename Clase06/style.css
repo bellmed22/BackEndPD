@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap");
+
+
+/* BASICO
+================================ */
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + vw);
+}
+
+body {
+  font-size: 1.5em;
+  background-color: #4ead6b;
+  color: #fff;
+  font-family: 'Arvo', serif;
+  text-align: center;  
+  padding: 5em 0;
+  line-height: 2.5rem;
+}
+
+/* Tipografías
+  ---------------------------------*/
+  h1 {
+    font-size: 4rem;
+    font-family: 'Lato', serif;
+    font-weight: 900;
+    letter-spacing: .4rem;   
+    line-height: 4rem;
+  }
+
+h2 {
+  padding: 3% 0 0 0;
+  font-family: 'Poppins', serif;
+  font-variant-caps: all-small-caps;
+  font-weight: 900;
+  letter-spacing: .2rem;
+}
+
+h3 {
+  padding: 3% 0 0 0;
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+  letter-spacing: .1rem;
+}
+
+h3 span {
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  height: 340px;
+  width: 500px;
+  padding: 20px;;
+  background-color: #304d3c;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+input {
+  background-color: #f0f0f0;
+  color: rgb(54, 54, 54);
+  padding: 10px;
+  border: 1px solid rgb(214, 214, 214);
+  font-size: 0.7em;
+  width: 350px;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+input::placeholder {
+  font-weight: 600;
+  opacity: 0.5;
+  color: rgb(58, 58, 58);
+}
+
+button {
+  width: 80%;
+  background-color: #0c974b;
+  width: 250px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: #f0f0f0;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #53c725;
+  transition: 0.15s;
+}
+
+button:active {
+  background-color: #83b91d;
+}
+
+
+
+
+
+
