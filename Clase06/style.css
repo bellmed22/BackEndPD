@@ -67,7 +67,7 @@ form {
 input {
   background-color: #f0f0f0;
   color: rgb(54, 54, 54);
-  padding: 10px;
+  padding: 15px;
   border: 1px solid rgb(214, 214, 214);
   font-size: 0.7em;
   width: 350px;
@@ -81,11 +81,12 @@ input::placeholder {
   color: rgb(58, 58, 58);
 }
 
-button {
+input[type=submit] {
   width: 80%;
   background-color: #0c974b;
   width: 250px;
   border: none;
+  margin-top: 25px;
   padding: 10px;
   border-radius: 20px;
   color: #f0f0f0;
@@ -93,12 +94,12 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+input[type=submit]:hover {
   background-color: #53c725;
   transition: 0.15s;
 }
 
-button:active {
+input[type=submit]:active {
   background-color: #83b91d;
 }
 

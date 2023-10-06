@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css"
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
 
@@ -13,14 +13,14 @@
         <h1>FORMULARIO ALUMNO</h1>  
         <div class="formulario">
             <form action="alumno.php" method="post">
-                <p>Nota del alumno:
-                    <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Nombre del alumno"/>
-                </p>
-                <p>Calificación:
-                    <input type="text" name="nota" id="nota" placeholder="Calificación"/>   
-                </p>
-                <button>Enviar</button>     
-            </form>
+                <label for="nombre">Nombre del alumno:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="nota">Nota del alumno:</label>
+                <input type="text" name="nota" id="nota">
+                <br>
+                <input type="submit" value="Enviar">
+              </form>
         </div>
     </body>
 
