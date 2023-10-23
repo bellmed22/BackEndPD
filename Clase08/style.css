@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap");
+
+
+/* BASICO
+================================ */
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + vw);
+}
+
+body {
+  font-size: 1.5em;
+  background-color: #883a3a;
+  color: #fff;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  padding: 3em 0;
+}
+
+/* Tipografías
+  ---------------------------------*/
+  h1 {
+    font-family: 'Poppins', serif;
+    font-weight: 900;
+    letter-spacing: .2rem;
+  }
+
+  h1 span {
+    padding-bottom: 3%;
+    font-size: 15rem;
+    font-family: 'Poppins', serif;
+    font-weight: 900;
+    line-height: 70%;;
+    letter-spacing: .4rem;
+  }
+  
+
+h2 {
+  padding: 3% 0;
+  font-size: 3.5rem;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  letter-spacing: .4rem;
+}
+
+h3 {
+  padding-bottom: 2%;
+  font: 2.5rem 'Lato', serif;
+}
+
+h4 {
+  padding: 2% 0 1% 0;
+  font: 2rem 'Lato', serif;
+  line-height: 0.3rem;
+}
