@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+
+*{
+    box-sizing: border-box;  
+    background: #23272a;  
+    color: #d0d0d0;    
+  }
+
+
+
+  .header {
+    min-height: 60px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-content {
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    padding-left: 3.25rem; 
+    padding-right: 3.25rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link-button {
+    display: flex;
+    width: 130px;
+    align-items: center;
+    background-color: #7754a0;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0 5%;
+    background-color: #7754a0;
+  }
+
+ 
+   section{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: #d0d0d0;   
+  }
+     
+  section h2{
+    width: 100%;
+    color: #999;
+    font-family: monospace;
+  }
+  
+  .card{
+    width: 33.333333%;
+    padding: 10px;
+    background: #23272a;
+    border: 0;;
+  }
+    
+  /*Estilo C*/
+  .estilo-c{
+    width: 30%;
+  }
+  .estilo-c .img-container{
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+    border-radius: 15px;
+  }
+  .estilo-c .img-container img{
+    width: 125%;
+    position: absolute;
+    top: -60%;
+    left: -10%;
+    transition: all 0.5s;
+  }
+  .estilo-c:hover .img-container img{
+    transform: scale(1.2);
+  }
+  .estilo-c .img-container .promo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: #f3a200;
+    padding: 15px;
+    color: black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+ 
+  .estilo-c .img-container .nuevo {  
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: #7754a0; 
+    padding: 15px;
+    color:  #d0d0d0; 
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;         
+  }
+
+  .estilo-c .info-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .estilo-c .info-container h3{
+    margin: 0;
+  }
+  .estilo-c .info-container h3,
+  .estilo-c .info-container strong,
+  .estilo-c .info-container span{
+    padding: 5px 15px;
+    width: 100%;
+  }
+  .estilo-c .add-cart{
+    margin-top: 2px;
+    text-decoration: none;
+    color:  #d0d0d0;
+    background-color: #c33764;
+    padding: 15px;
+    border: 1px solid #c33764;
+    border-radius: 25px;
+  }
+  .estilo-c .add-cart:hover{
+    color: #c33764;
+    background-color: transparent;
+    font-weight: 900;
+    border: 2px solid #c33764;
+  }
