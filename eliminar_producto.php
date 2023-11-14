@@ -1,7 +1,7 @@
 <?php 
 $conexion = mysqli_connect("localhost:3306", "root", "", "proyecto_integrador");
 
-$query = "DELETE FROM productos WHERE codigo = 4";
+$query = "DELETE FROM store WHERE codigo = 4";
 $resultado = mysqli_query($conexion, $query);
 
 if($resultado === true){
