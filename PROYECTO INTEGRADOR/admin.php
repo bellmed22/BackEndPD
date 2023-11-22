@@ -56,6 +56,8 @@
 <?php include("header.php")?> <!-- Header --> 
 
 <!-- PRODUCTOS -->
+</style>
+
 <section>
     <div class="container">
         <div class="table-wrapper">
@@ -90,6 +92,13 @@
             </thead>
             <tbody>
               <tr>  
+              <script>
+function eliminarProducto(id) {
+  if (confirm("Esta seguro que desea eliminar el producto?") == true) {
+    window.location.href = "./eliminar_producto.php?id="+id;
+  }
+}
+</script>
                  <?php                      
                         $query = "SELECT * FROM productos";
 
@@ -107,9 +116,12 @@
                                 echo "<td>".$fila["tipo_producto"]."</td>";
                                 echo "<td>".$fila["descripcion_producto"]."</td>";
                                 echo "<td>".$fila["precio_producto"]."</td>";
-                                echo "<td><a href='./editar_producto.php?id_producto=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
-                                      <a href='./eliminar_producto.php?id_producto=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a></td>";                                                                                
-                          
+                                echo "<td>
+                                  <a href='./editar_producto.php?id=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
+                                  <a href='javascript:void(0);' onclick='eliminarProducto(".$fila["id_producto"].")' class='delete' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>
+                                </td>";                                                                              
+                                     // onclick='return confirm('¿Desea editar este producto?')'
+                                     //onclick='return confirm('¿Desea edliminar este producto?')'
                                 echo "</tr>";
                         }
                         mysqli_close($conexion);
