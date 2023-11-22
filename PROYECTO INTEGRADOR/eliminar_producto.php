@@ -1,7 +1,7 @@
 <?php 
 $conexion = mysqli_connect("localhost:3306", "root", "", "servicios");
 
-$query = "DELETE FROM productos WHERE id = 1";
+$query = "DELETE FROM productos WHERE id = ";
 $resultado = mysqli_query($conexion, $query);
 
 if($resultado === true){
