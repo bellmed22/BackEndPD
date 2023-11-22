@@ -1,6 +1,6 @@
 <?php 
 
-    $idProducto = $_GET["id"]; 
+    $idProducto = $_GET["id"]; //VALIDAR!!!!!
     
     $conexion = mysqli_connect("localhost:3306", "root", "", "servicios");
 
