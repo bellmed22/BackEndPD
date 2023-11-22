@@ -51,7 +51,7 @@
 <!-- FORMULARIO --> 
 <section>
 
-<?php include("agregar_producto.php")?>
+<?php include("editar_producto.php")?>
 
 </section white>
 <!-- SCRIPTS -->

@@ -75,7 +75,7 @@
               <tr>
                 <th>ld
                   <span class="custom-checkbox">
-                                      <input type="checkbox" id="selectAll">
+                                      <input type="checkbox" id_producto="selectAll">
                                       <etiqueta for="selectAll"></etiqueta>
                                   </span>
                 </th> 
@@ -84,8 +84,8 @@
                 <th>Nombre</th>
                 <th>Tipo</th>
                 <th>Descripción</th>
-                <th>Precio</th>     
-                <th>Acciones</th> 
+                <th>Precio</th>     escripcion
+                <th>Acciones</th> escripcion
               </tr>
             </thead>
             <tbody>
@@ -99,22 +99,18 @@
                             echo "<tr>";
                             echo "<td>
                             <span class='custom-checkbox'>
-                                            <input type='checkbox' id='checkbox1' name='options[]' value='1'>
+                                            <input type='checkbox' id_producto='checkbox1' name='options[]' value='1'>
                                             <etiqueta for='checkbox1'></etiqueta>
                                             </span></td>";
-                                echo "<td>".$fila["id"]."</td>";
-                                echo "<td>".$fila["producto"]."</td>";
-                                echo "<td>".$fila["tipo"]."</td>";
-                                echo "<td>".$fila["descripcion"]."</td>";
-                                echo "<td>".$fila["precio"]."</td>";
-                                echo "<td><a href='./editar_producto.php?id=".$fila["id"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
-                                      <a href='./eliminar_producto.php?id=".$fila["id"]."'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a></td>";
-                                // echo "<td> 
-                                           // <a class='edit' title='Edit' data-toggle='tooltip'><i class='material-icons'>&#xE254;</i></a>
-                                           // <!--<a href='./eliminar_producto.php?id=".$unaFila["id_producto"]."' class='delete' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>-->
-                                           // <a href='javascript:void(0);' onclick='eliminarProducto(".$unaFila["id_producto"].")' class='delete' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>
-                                    //  </td>";-->
-                            echo "</tr>";
+                                echo "<td>".$fila["id_producto"]."</td>";
+                                echo "<td>".$fila["nombre_producto"]."</td>";
+                                echo "<td>".$fila["tipo_producto"]."</td>";
+                                echo "<td>".$fila["descripcion_producto"]."</td>";
+                                echo "<td>".$fila["precio_producto"]."</td>";
+                                echo "<td><a href='./editar_producto.php?id_producto=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
+                                      <a href='./eliminar_producto.php?id_producto=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a></td>";                                                                                
+                          
+                                echo "</tr>";
                         }
                         mysqli_close($conexion);
                     ?> 
@@ -144,7 +140,7 @@
 
 
       <!-- Edit Modal HTML -->
-      <div id="addEmployeeModal" class="modal fade">
+      <div id_producto="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
             <form>
@@ -159,7 +155,7 @@
                 </div>
                 <div class="form-group">
                     <etiqueta>Nombre</etiqueta>
-                    <input type="file" class="miniatura" id="imagen" placeholder="Subir archivo" required/>
+                    <input type="file" class="miniatura" id_producto="imagen" placeholder="Subir archivo" required/>
                   </div>
                 <div class="form-group">
                   <etiqueta>Nombre</etiqueta>
@@ -183,7 +179,7 @@
         </div>
       </div>
       <!-- Edit Modal HTML -->
-      <div id="editEmployeeModal" class="modal fade">
+      <div id_producto="editEmployeeModal" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
             <form>
@@ -194,7 +190,7 @@
                     </div>
                     <div class="form-group">
                         <etiqueta>Nombre</etiqueta>
-                        <input type="file" class="miniatura" id="imagen" placeholder="Subir archivo" required/>
+                        <input type="file" class="miniatura" id_producto="imagen" placeholder="Subir archivo" required/>
                       </div>
                     <div class="form-group">
                       <etiqueta>Nombre</etiqueta>
@@ -218,7 +214,7 @@
         </div>
       </div>
       <!-- Delete Modal HTML -->
-      <div id="deleteEmployeeModal" class="modal fade">
+      <div id_producto="deleteEmployeeModal" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
             <form>

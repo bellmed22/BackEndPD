@@ -47,7 +47,7 @@
     
     <!-- HEADER -->
     <?php include('header.php')?>     
-
+roducto
     <!-- SERVICIOS -->
 
     <section id="servicios" class="section-white">
@@ -61,7 +61,7 @@
 
                
             <?php 
-    $query = "SELECT * FROM productos where tipo = 1";
+    $query = "SELECT * FROM productos where tipo_producto = 1";
     $resultado = mysqli_query($conexion, $query);
             echo "<h3 class='prod-cat dis'>Diseño Gráfico</h3>";
 
@@ -69,15 +69,15 @@
             echo "<figure class='snip1418 dis col-lg-4 col-md-6 col-sm-6 portfolio-item'>
             <div class='add-to-cart'><i class='ion-android-add'></i><span>Comprar ahora</span></div>
             <figcaption>
-              <h3>".$fila["producto"]."</h3>
-              <p>".$fila["descripcion"]."</p>
-            <div class='price'>".$fila["precio"]."</div>
+              <h3>".$fila["nombre_producto"]."</h3>
+              <p>".$fila["descripcion_producto"]."</p>
+            <div class='price'>".$fila["precio_producto"]."</div>
             </figcaption><a href='·'></a>
             </br>
           </figure>";        
             }
 
-        $query = "SELECT * FROM productos where tipo = 3";
+        $query = "SELECT * FROM productos where tipo_producto = 3";
         $resultado = mysqli_query($conexion, $query);
             echo "<h3 class='prod-cat ill'>Ilustración</h3>";
 
@@ -85,15 +85,15 @@
             echo "<figure class='snip1418 ill col-lg-4 col-md-6 col-sm-6 portfolio-item'>
             <div class='add-to-cart add-to-cart_ill'><i class='ion-android-add'></i><span>Comprar ahora</span></div>
             <figcaption>
-              <h3>".$fila["producto"]."</h3>
-              <p>".$fila["descripcion"]."</p>
-            <div class='price'>".$fila["precio"]."</div>
+              <h3>".$fila["nombre_producto"]."</h3>
+              <p>".$fila["descripcion_producto"]."</p>
+            <div class='price'>".$fila["precio_producto"]."</div>
             </figcaption><a href='·'></a>
             </br>
           </figure>";        
             }    
 
-            $query = "SELECT * FROM productos where tipo = 2";
+            $query = "SELECT * FROM productos where tipo_producto = 2";
             $resultado = mysqli_query($conexion, $query);
                 echo "<h3 class='prod-cat web'>Diseño Web</h3>";
     
@@ -101,12 +101,14 @@
                 echo "<figure class='snip1418 web col-lg-4 col-md-6 col-sm-6 portfolio-item'>
                 <div class='add-to-cart add-to-cart_web'><i class='ion-android-add'></i><span>Comprar ahora</span></div>
                 <figcaption>
-                  <h3>".$fila["producto"]."</h3>
-                  <p>".$fila["descripcion"]."</p>
-                <div class='price'>".$fila["precio"]."</div>
+                  <h3>".$fila["nombre_producto"]."</h3>
+                  <p>".$fila["descripcion_producto"]."</p>
+                <div class='price'>".$fila["precio_producto"]."</div>
                 </figcaption><a href='·'></a>
               </figure>";        
                 }  
+                
+             mysqli_close($conexion);
           ?>
 
 

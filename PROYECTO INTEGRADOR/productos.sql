@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2023 at 12:22 AM
+-- Generation Time: Nov 22, 2023 at 06:10 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -28,29 +28,28 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `productos` (
-  `id` int(11) NOT NULL,
-  `producto` varchar(50) NOT NULL,
-  `tipo` tinyint(1) NOT NULL,
-  `descripcion` varchar(255) NOT NULL,
-  `precio` varchar(20) NOT NULL
+  `id_producto` int(11) NOT NULL,
+  `nombre_producto` varchar(100) NOT NULL,
+  `tipo_producto` tinyint(1) NOT NULL,
+  `descripcion_producto` varchar(255) NOT NULL,
+  `precio_producto` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `productos`
 --
 
-INSERT INTO `productos` (`id`, `producto`, `tipo`, `descripcion`, `precio`) VALUES
-(28, 'Postales', 1, 'Postales, flyers y volantes.\r\nEstandar: A6 (10,5x14,8cm)\r\nAfiche/Postal: A4 (21,59x27,94cm)', '16.000'),
-(29, 'Afiches', 1, 'Afiches para boletines.\r\nTamaño: A3 (27,94x43,18 cm).', '18.000'),
-(30, 'Folletos', 1, 'Dípticos y trípticos.\r\nTamaño: A5 (14,8x21,0cm). ', '20.000'),
-(31, 'Landing Page', 2, 'Toda la información de tu sitio en una sola pantalla.', '30.000'),
-(32, 'E-commerce', 2, 'Carro de ventas autogestionable. 4 secciones:\r\n-Inicio\r\n-Productos o Servicios\r\n-Noticias, Galería o Productos destacados\r\n-Contacto', '80.000'),
-(33, 'Página personalizada', 2, 'Diseño personalizado adaptado a tus gustos y necesidades.', '60.000'),
-(34, 'Ilustración (Simple)', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nColor simple.\r\n\r\n\r\n*Consultar por más personas o fondo.\r\n\r\n ', '15.000'),
-(35, 'Ilustración (Full color)', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nFull color.\r\n\r\n\r\n*Consultar por más personas o fondo.', '20.000'),
-(36, 'Ilustración (B&N)', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nBlanco y Negro.\r\n\r\n\r\n*Consultar por más personas o fondo.', '10.000'),
-(46, 'TEST1', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nBlanco y Negro.\r\n\r\n\r\n*Consultar por más personas o fondo.', '10.000'),
-(47, 'TEST2', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nBlanco y Negro.\r\n\r\n\r\n*Consultar por más personas o fondo.', '10.000');
+INSERT INTO `productos` (`id_producto`, `nombre_producto`, `tipo_producto`, `descripcion_producto`, `precio_producto`) VALUES
+(13, 'Postales', 1, 'Postales, flyers y volantes.\r\nEstandar: A6 (10,5x1...', '$16.000'),
+(14, 'Landing Page', 2, 'Toda la informaciÃ³n de tu sitio en una sola pantalla.', '$30.000'),
+(15, 'PÃ¡gina personalizada', 2, 'DiseÃ±o personalizado adaptado a tus gustos y necesidades.', '$60.000'),
+(16, 'Afiches', 1, 'Afiches para boletines.\r\nTamaÃ±o: A3 (27,94x43,18 cm).', '$18.000'),
+(17, 'Folletos', 1, 'DÃ­pticos y trÃ­pticos.\r\nTamaÃ±o: A5 (14,8x21,0cm). ', '$20.000'),
+(18, 'IlustraciÃ³n (Simple)', 3, 'Ilustracion digital, \n1 persona o personaje, busto o medio cuerpo.\nColor simple.\n\n\n*Consultar por mÃ¡s personas o fondo.', '$15.000'),
+(19, 'IlustraciÃ³n (Full color)', 3, 'Ilustracion digital, \n1 persona o personaje, busto o medio cuerpo.\nFull color.\n\n\n*Consultar por mÃ¡s personas o fondo.', '$20.000'),
+(20, 'E-commerce', 2, 'Carro de ventas autogestionable. 4 secciones:\r\n-Inicio\r\n-Productos o Servicios\r\n-Noticias, GalerÃ­a o Productos destacados\r\n-Contacto', '$80.000'),
+(21, 'IlustraciÃ³n (B&N)', 3, 'Ilustracion digital, \r\n1 persona o personaje, busto o medio cuerpo.\r\nBlanco y Negro.\r\n\r\n\r\n*Consultar por mÃ¡s personas o fondo.', '$10.000'),
+(24, 'Test', 2, 'Testing', '$0');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +59,7 @@ INSERT INTO `productos` (`id`, `producto`, `tipo`, `descripcion`, `precio`) VALU
 -- Indexes for table `productos`
 --
 ALTER TABLE `productos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_producto`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -70,7 +69,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT for table `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

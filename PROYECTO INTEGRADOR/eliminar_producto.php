@@ -1,15 +1,20 @@
 <?php 
-$conexion = mysqli_connect("localhost:3306", "root", "", "servicios");
 
-$query = "DELETE FROM productos WHERE id = ";
-$resultado = mysqli_query($conexion, $query);
+    $idProducto = $_GET["id"]; 
+    
+    $conexion = mysqli_connect("localhost:3306", "root", "", "servicios");
 
-if($resultado === true){
-    echo "Se elimino el productoso correctamente!";
-}
-else{
-    echo "Hubo un error, vuelva a intentarlo nuevamente!";
-}
+    $query = "DELETE FROM productos WHERE id_producto = $idProducto";
+    $resultado = mysqli_query($conexion, $query);
 
-mysqli_close($conexion);
+    if($resultado === true){
+        echo "<p>Se elimino el producto correctamente!</p>";
+        echo "<a href='./productos.php'>Volver</a>";
+    }
+    else{
+        echo "<p>Hubo un error, vuelva a intentarlo nuevamente!</p>";
+        echo "<a href='./productos.php'>Volver</a>";
+    }
+
+    mysqli_close($conexion);
 ?>
