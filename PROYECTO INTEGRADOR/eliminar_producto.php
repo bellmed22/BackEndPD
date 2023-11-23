@@ -2,18 +2,18 @@
 
     $idProducto = $_GET["id"]; //VALIDAR!!!!!
     
-    $conexion = mysqli_connect("localhost:3306", "root", "", "servicios");
+    include 'conexion.php';
 
     $query = "DELETE FROM productos WHERE id_producto = $idProducto";
     $resultado = mysqli_query($conexion, $query);
 
     if($resultado === true){
         echo "<p>Se elimino el producto correctamente!</p>";
-        echo "<a href='./productos.php'>Volver</a>";
+        header('Location: admin.php');
     }
     else{
         echo "<p>Hubo un error, vuelva a intentarlo nuevamente!</p>";
-        echo "<a href='./productos.php'>Volver</a>";
+        header('Location: admin.php');
     }
 
     mysqli_close($conexion);

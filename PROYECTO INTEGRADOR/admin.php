@@ -117,9 +117,10 @@ function eliminarProducto(id) {
                                 echo "<td>".$fila["descripcion_producto"]."</td>";
                                 echo "<td>".$fila["precio_producto"]."</td>";
                                 echo "<td>
-                                  <a href='./editar_producto.php?id=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
+                                  <a href='./editar_producto.php?id_producto=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>
                                   <a href='javascript:void(0);' onclick='eliminarProducto(".$fila["id_producto"].")' class='delete' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>
-                                </td>";                                                                              
+                                </td>";                                
+                                    // <a href='./editar_producto.php?id=".$fila["id_producto"]."'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>                                              
                                      // onclick='return confirm('¿Desea editar este producto?')'
                                      //onclick='return confirm('¿Desea edliminar este producto?')'
                                 echo "</tr>";
@@ -148,108 +149,7 @@ function eliminarProducto(id) {
           </div>
         </div>
       </div>
-      FIN PAGINACIÓN -->
-
-
-      <!-- Edit Modal HTML -->
-      <div id_producto="addEmployeeModal" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form>
-              <div class="modal-header">
-                <h4 class="modal-title">Añadir item</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                  <etiqueta>Código</etiqueta>
-                  <input type="text" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <etiqueta>Nombre</etiqueta>
-                    <input type="file" class="miniatura" id_producto="imagen" placeholder="Subir archivo" required/>
-                  </div>
-                <div class="form-group">
-                  <etiqueta>Nombre</etiqueta>
-                  <input type="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <etiqueta>Descripción</etiqueta>
-                  <textarea class="form-control" required></textarea>
-                </div>
-                <div class="form-group">
-                  <etiqueta>Precio</etiqueta>
-                  <input type="text" class="form-control" required>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                <input type="submit" class="btn btn-success" value="add">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- Edit Modal HTML -->
-      <div id_producto="editEmployeeModal" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form>
-                <div class="modal-body">
-                    <div class="form-group">
-                      <etiqueta>Código</etiqueta>
-                      <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <etiqueta>Nombre</etiqueta>
-                        <input type="file" class="miniatura" id_producto="imagen" placeholder="Subir archivo" required/>
-                      </div>
-                    <div class="form-group">
-                      <etiqueta>Nombre</etiqueta>
-                      <input type="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                      <etiqueta>Descripción</etiqueta>
-                      <textarea class="form-control" required></textarea>
-                    </div>
-                    <div class="form-group">
-                      <etiqueta>Precio</etiqueta>
-                      <input type="text" class="form-control" required>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                    <input type="submit" class="btn btn-success" value="add">
-                  </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- Delete Modal HTML -->
-      <div id_producto="deleteEmployeeModal" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form>
-              <div class="modal-header">
-                <h4 class="modal-title">Eliminar item</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-              <div class="modal-body">
-                <p>¿Esta seguro/a de querer eliminar este item?</p>
-                <p class="text-warning"><small>Está acción no se puede deshacer.</small></p>
-              </div>
-              <*section>
-
-    <!-- FOOTER
-              <div class="modal-footer">
-                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                <input type="submit" class="btn btn-danger" value="Delete">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>     
-      END FOOTER-->
+      FIN PAGINACIÓN -->     
 
 
     <!-- Bootstrap Js -->
